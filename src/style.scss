@@ -153,123 +153,91 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
                 width: 100%;
                 position: relative;*/
 
-              
-
                 .messages {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
+                    flex: 1;
                     padding: 10px;
-                    overflow-y: auto;
-                }
-                
-                .message {
                     display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    gap: 10px;
-                
-                    .messageContent {
-                        max-width: 70%;
-                        text-align: left;
-                        p {
-                            background-color: white;
-                            color: black;
-                            padding: 10px 20px;
-                            border-radius: 0px 10px 10px 10px;
+                    flex-direction: column; 
+                    overflow-y: auto;
+                    position: relative;
+                  
+                    .message {
+                      display: flex;
+                      justify-content: flex-start; 
+                      align-items: flex-start;
+                      gap: 10px;
+                      margin-bottom: 20px;
+                  
+                      /* Receiver (default) */
+                      .messageInfo {
+                        display: flex;
+                        flex-direction: column;
+                        color: grey;
+                        font-weight: 300;
+                  
+                        img {
+                          width: 40px;
+                          height: 40px;
+                          border-radius: 50%;
+                          object-fit: cover;
                         }
-                    }
-                }
-                
-                .message.owner {
-                    flex-direction: row-reverse;
-                    justify-content: flex-end;
-           
-                
-                    .messageContent {
-                     
+                      }
+                  
+                      .messageContent {
+                        max-width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        position: relative;
+                  
                         p {
-                            background-color: #8da4f1;
+                          background-color: white;
+                          padding: 10px 20px;
+                          border-radius: 0px 10px 10px 10px; 
+                          margin: 0;
+                          word-wrap: break-word; 
+                          max-width: max-content;
+                        }
+                  
+                        img {
+                          width: 100%;
+                          border-radius: 10px;
+                          margin-top: 10px;
+                        }
+                      }
+                  
+                      /* Sender (owner) */
+                      &.owner {
+                        flex-direction: row-reverse; 
+                        justify-content: flex-start;
+                        transform: translateX(250px);
+                        .messageInfo {
+                          align-items: center;
+                        }
+                  
+                        .messageContent {
+                          align-items: flex-end;
+                          text-align: right;
+                  
+                          p {
+                            background-color: #8da4f1; 
                             color: white;
                             border-radius: 10px 0px 10px 10px;
+                          }
                         }
+                      }
                     }
-                }
-                
-                .messageInfo{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    color:grey;
-                    font-weight: 300;
+                  }
                   
-                    img{
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 50%;
-                        object-fit: cover;
-
-                    }
-                }
-                .messageContent{
-                    max-width:80%; 
-                    display: flex;
-                    flex-direction: column;
-                    gap:10px;
-                    position: relative;
-                    text-align: right;
-                   
-                    p {
-                        background-color: white;
-                        padding: 10px 20px;
-                        border-radius: 0px 10px 10px 10px;
-                        margin: 0; 
-                        word-wrap: break-word; /* Ensure text wraps */
-                        max-width: max-content;
-                    }             
-                    img{
-                        width: 100%;
-                        border-radius: 10px;
-                        margin-top: 10px;
-
-                    }
-                }
-                &.owner{
-                    flex-direction: row-reverse;
-                    justify-content: flex-start;
-               
-                    .messageInfo {
-                        align-items: center; /* Center avatar and text */
-                    }
-        
-                    .messageContent {
-                    text-align: right;
-                    align-items: flex-end;
-                    
-                    .messageContent p {
-                        background-color: white;
-                        padding: 10px 15px;
-                        border-radius: 10px;
-                        margin: 0;
-                        word-wrap: break-word; /* Ensure long words wrap */
-                    }
-                    
-                    .messageContent img {
-                        width: 100%; /* Make the image responsive */
-                        max-width: 300px; /* Set a maximum width for images */
-                        border-radius: 10px;
-                        object-fit: cover; /* Ensure the image scales properly */
-                    }
-                }
                /* .messageContent {
                     background-color: #8da4f1;
                     color: white;
                     border-radius: 10px 0px 10px 10px;
 
                    }*/
-                }
-             }  
-            }
+                
+        
+    
             /*classname*/
             .input {
                 
@@ -292,8 +260,8 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
             outline: none;
             color: #2f2d52;
             font-size: 18px;
-            margin: 0; /* Remove any default spacing */
-            padding: 0; /* Remove any default spacing */
+            margin: 0; 
+            padding: 0; 
             &::placeholder{
                 color:lightgrey;
             }
@@ -318,14 +286,13 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
         }
             }
         }
-    
-        
-
+    }        
+}
 //dark and light mode//
 /* Define themes for the body */
 
   
-  /* Specific styles for the chat container */
+
   .chat {
     &.dark {
       background-color: #2f2d52;
@@ -357,6 +324,7 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
         cursor: pointer;
         font-size: 14px;
         transition: background-color 0.3s ease;
+        z-index: 10000;
   
         &:hover {
           background-color: #7c93e8;
@@ -367,4 +335,3 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
         }
       }
     }
-  
