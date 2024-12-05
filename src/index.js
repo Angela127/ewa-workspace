@@ -6,6 +6,7 @@ import './style.scss';
 import { AuthContextProvider } from './context/AuthContext';
 import { ChatContextProvider } from './context/ChatContext';
 const root=ReactDOM.createRoot(document.getElementById("root"));
+//test for github
 root.render(
   <AuthContextProvider>
   <ChatContextProvider>
