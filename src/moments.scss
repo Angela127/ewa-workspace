@@ -1,0 +1,197 @@
+/* Adjust the posts section to ensure proper spacing */
+.posts {
+    transform: translateY(50px);
+    color: white;
+    font-family: Arial, sans-serif; 
+    padding-bottom: 20px; 
+}
+
+/* Styling for individual posts */
+.post {
+    transform: translateY(50px);
+    background-color: #3e3c61; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto; 
+    position: relative; 
+}
+
+.notice{
+    color: white; 
+    font-size: 18px;  
+    margin-top: 50px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+
+/* Ensure buttons are visible and not overlapped */
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    position: relative; 
+    z-index: 10; 
+}
+
+/* Ensure the post button stays centered without moving */
+.post-button {
+    position: absolute; 
+    left: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #400d6a; 
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 16px; 
+    z-index: 10; 
+    transition: background-color 0.3s ease, scale 0.2s ease; 
+}
+/* Hover effects */
+.post-button:hover {
+    background-color: #2980b9; 
+    transform: scale(1.05); 
+}
+
+/* Focus effects */
+.post-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8);
+}
+
+
+
+/* Button styles - shared for all buttons */
+.all-button
+{
+    background-color:  #400d6a; 
+    color: white; 
+    padding: 12px 18px; /* Button size */
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 16px; /* Text size */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.add-button
+{
+    background-color: #ab1515; 
+    color: white; 
+    padding: 12px 18px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effects - shared for buttons */
+.all-button:hover,
+.add-button:hover {
+    background-color: #3e115a; 
+    transform: scale(1.05); /* Enlarge slightly */
+}
+
+/* Focus effect for buttons */
+.all-button:focus,
+.add-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8);
+}
+
+/* Add-button unique hover effect */
+.add-button:hover {
+    background-color: #860808; 
+}
+
+/* Delete button */
+.delete-button {
+    position: absolute; 
+    right: 10px;
+    top: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 30;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Input fields styling */
+.textarea-1, .comment-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    resize: none;
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    z-index: 90;
+    transform: translateY(0); /* Avoid overlap */
+}
+
+.textarea-1 {
+    width: 80%;
+}
+
+.comment-input {
+    width: 20%;
+  
+}
+
+/* Modal for delete confirmation */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    z-index: 50; /* Ensure it's above all other content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the avatar */
+.avatar, .comment img.avatar {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    justify-content: center;
+    transform: translateX(140px);
+}
+
+/* Comment styling */
+.comment {
+    transform: translateY(20px);
+}
+
+.comment-text {
+    margin-bottom: 20px;
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+    justify-content: center;
+    text-align: center;
+}

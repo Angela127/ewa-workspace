@@ -1,0 +1,5 @@
+{
+  "Color": { "numOptions": 3 },
+  "Face": { "numOptions": 4 },
+  "BackgroundColor": { "numOptions": 5 }
+}

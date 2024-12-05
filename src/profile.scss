@@ -1,0 +1,144 @@
+/* Apply global font and reset margins */
+body {
+  font-family: 'Tiny5', sans-serif;
+ 
+  margin: 0;
+  padding: 0;
+  background-color: #08080c;
+  
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Tiny5', sans-serif;
+  font-weight: 500;
+}
+h3{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+;
+}
+.profile-page h2 {
+  padding: 20px;
+  text-align: center;
+  top: 50px;
+  color: white;
+}
+
+/* Profile page styling */
+/* Adding padding-top to move the layout lower */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 20px 20px;  /* Adjust the padding-top to move it lower */
+  max-width: 800px;
+
+  margin: 0 auto;
+  border-radius: 10px;
+ color:#555;
+}
+
+/* Avatar section */
+.profile-page img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Username input styling */
+.profile-page .edit-input {
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-page .edit-input h3 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.profile-page input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+  background-color: #fafafa;
+}
+
+.profile-page input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Email input styling */
+.profile-page .edit-input input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #fafafa;
+}
+
+.profile-page .edit-input input[type="email"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button styling */
+.profile-page .update-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-page .update-button:hover {
+  background-color: #0056b3;
+}
+
+/* Delete Profile button */
+.profile-page .del-button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #d4051a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-page .del-button:hover {
+  background-color: #8a0815;
+}
+
+/* Avatar change button */
+.profile-page .change-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: #28a745;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-page .change-button:hover {
+  background-color: #218838;
+}
+
+/* Hidden file input */
+.profile-page input[type="file"] {
+  display: none;
+}
