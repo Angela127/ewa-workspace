@@ -7,6 +7,7 @@ import { AuthContextProvider } from './context/AuthContext';
 import { ChatContextProvider } from './context/ChatContext';
 const root=ReactDOM.createRoot(document.getElementById("root"));
 //test for github
+//test for github2
 root.render(
   <AuthContextProvider>
   <ChatContextProvider>
