@@ -22,10 +22,11 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+  
   }
   
   body {
-    min-height: 100vh;
+    min-height: 200vh;
     overflow-x: hidden;
     background: black;
     background-size: cover;
@@ -37,7 +38,7 @@ html, body {
      HEADER
   ================================ */
   header {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -134,7 +135,7 @@ html, body {
     height: 100vh;
   }
   
-  .workspace {
+  .workspace-2{
     position: absolute;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     font-size: 3em;
@@ -151,13 +152,15 @@ html, body {
     }
   }
   
-  .workspace .icon-2 {
+  .workspace-2 .icon-2 {
     color: #fff;
     position: absolute;
     top: 80px;
     font-size: 1em;
     animation: bounce 1s infinite;
   }
+  
+  
   
   .parallax img {
     position: absolute;
@@ -168,19 +171,24 @@ html, body {
   }
   
   #tree-left {
-    position: fixed;
+    position: absolute;
      max-width: 60%;
      top: 75px;
      transform: translateX(328px);
+     transition: left 0.1s ease;
+ 
+     
 
   }
   
   #tree-right {
-    position: fixed;
+    position: absolute;
     max-width: 60%;
     top: 75px;
     transform: translateX(328px);
+    transition: left 0.1s ease;
   }
+
   
   #leave-left {
     position: absolute;
@@ -319,6 +327,7 @@ font-family: "Bungee Shade", sans-serif;
     width: 100%;
     transform: translateX(-25px);
     transform: translateY(100px);
+   
   }
   
   .card {
@@ -345,7 +354,7 @@ font-family: "Bungee Shade", sans-serif;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(206, 149, 227, 0.5), rgb(62, 56, 109));
+    background: linear-gradient(to bottom, rgba(252, 252, 255, 0.821), rgb(62, 56, 109));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -383,13 +392,17 @@ font-family: "Bungee Shade", sans-serif;
     font-size: 2em;
     color: #f4e0e0;
     margin: 0;
+    font-family: "Sour Gummy", serif;
   }
   
-  .p3 {
+  .p5{
     color: #c8c8c8;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     font-size: 15px;
     margin: 8px 0 20px;
+    text-align: center;
+    left: 50%;
+    font-family: "Lilita One",serif;
   }
   
   /* ===============================

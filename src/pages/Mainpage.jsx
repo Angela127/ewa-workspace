@@ -36,8 +36,8 @@ function MainPage() {
         />
         <Card
           image="/images/meeting image.jpg"
-          title="Meet"
-          description="Collaborate in real-time."
+          title="Moments"
+          description="Share the thoughts of your day."
         />
         <Card
           image="/images/virtual.jpg"

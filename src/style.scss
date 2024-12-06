@@ -121,7 +121,7 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
         .chat {
             flex: 2;
             display: flex;
-            flex-direction: column; /* Stack items vertically */
+            flex-direction: column;
             height: 100%;
             overflow: hidden;
             border: none;
@@ -176,7 +176,7 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
                         font-weight: 300;
                   
                         img {
-                          width: 40px;
+                          width: 50px;
                           height: 40px;
                           border-radius: 50%;
                           object-fit: cover;
@@ -201,7 +201,7 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
                   
                         img {
                           width: 100%;
-                          border-radius: 10px;
+                          border-radius: 0px;
                           margin-top: 10px;
                         }
                       }
@@ -324,7 +324,7 @@ $darkColor:#2f2d52;/*just to define color and insert into style later*/
         cursor: pointer;
         font-size: 14px;
         transition: background-color 0.3s ease;
-        z-index: 10000;
+       
   
         &:hover {
           background-color: #7c93e8;

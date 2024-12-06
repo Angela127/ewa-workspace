@@ -9,7 +9,7 @@
   body {
     font-family: Arial, sans-serif;
     height: 100vh;
-    overflow: hidden;
+ 
   }
   
   /* Workspace container */
@@ -27,7 +27,7 @@
     flex-direction: column;
     color: white;
     text-align: center;
-    overflow: hidden; /* Prevent scrollbars */
+    
   }
   
   /* Overlay for better contrast */
@@ -53,7 +53,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
-    overflow: hidden;
+    
   }
   
   /* Individual seat position */
@@ -93,7 +93,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-49%, -68%); /* Center the avatar within the seat */
+    transform: translate(-50%, -50%); /* Center the avatar within the seat */
     z-index: 3; /* Ensure it appears above other elements */
   }
   
