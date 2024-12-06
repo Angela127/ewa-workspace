@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { signInWithEmailAndPassword } from 'firebase/auth';  // Import Firebase functions
-import { auth } from '../firebase';  // Ensure auth is imported here
+import { signInWithEmailAndPassword } from 'firebase/auth';  
+import { auth } from '../firebase';  
 import { sendPasswordResetEmail } from 'firebase/auth';  // Import Firebase reset password function
 
 function LoginForm({ onSwitchToRegister, setIsAuthenticated }) {

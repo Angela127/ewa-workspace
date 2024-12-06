@@ -38,7 +38,7 @@
     z-index: 10; 
 }
 
-/* Ensure the post button stays centered without moving */
+
 .post-button {
     position: absolute; 
     left: 47%;
@@ -69,16 +69,15 @@
 
 
 
-/* Button styles - shared for all buttons */
 .all-button
 {
     background-color:  #400d6a; 
     color: white; 
-    padding: 12px 18px; /* Button size */
+    padding: 12px 18px; 
     border: none;
     border-radius: 8px; 
     cursor: pointer;
-    font-size: 16px; /* Text size */
+    font-size: 16px; 
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .add-button
@@ -97,7 +96,7 @@
 .all-button:hover,
 .add-button:hover {
     background-color: #3e115a; 
-    transform: scale(1.05); /* Enlarge slightly */
+    transform: scale(1.05); 
 }
 
 /* Focus effect for buttons */
@@ -128,7 +127,7 @@
 
 .delete-button:hover {
     background-color: #c0392b;
-    transform: scale(1.05); /* Slightly enlarge the button */
+    transform: scale(1.05); 
 }
 
 /* Input fields styling */
@@ -143,7 +142,7 @@
     margin-top: 10px;
     background-color: #f7f7f7;
     z-index: 90;
-    transform: translateY(0); /* Avoid overlap */
+    transform: translateY(0);
 }
 
 .textarea-1 {
@@ -165,7 +164,7 @@
     padding: 30px;
     border-radius: 10px;
     color: white;
-    z-index: 50; /* Ensure it's above all other content */
+    z-index: 50;
     display: flex;
     flex-direction: column;
     justify-content: center;

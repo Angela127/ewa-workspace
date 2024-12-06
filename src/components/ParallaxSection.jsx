@@ -14,20 +14,20 @@ function ParallaxSection() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.body.scrollHeight - windowHeight;
 
-      // Calculate scroll percentage
+      
       const scrollPercent = scrollTop / documentHeight;
 
       if (workspace && treeLeft && treeRight && leaveLeft && leaveRight) {
-        // Adjust movement values for gradual motion
-        const leftMovement = scrollTop * -0.5; // Adjust to control the pace
-        const rightMovement = scrollTop * 0.5;
+     
+        const leftMovement = scrollTop * 0.5; 
+        const rightMovement = scrollTop *-0.5;
 
         workspace.style.transform = `translateY(${scrollTop * 0.1}px)`;
         treeLeft.style.left = `${leftMovement}px`;
         treeRight.style.left = `${rightMovement}px`;
 
-        leaveLeft.style.left = `${leftMovement * 0.5}px`;
-        leaveRight.style.left = `${rightMovement * 0.5}px`;
+        leaveLeft.style.left = `${leftMovement * 8}px`;
+        leaveRight.style.left = `${rightMovement * 8}px`;
       }
     };
 
